@@ -801,7 +801,7 @@ function kerl
                 if test -z "$ACTIVE_NAME"
                     set -l VALUE (basename "$ACTIVE_PATH")*
                 else
-                    VALUE="$ACTIVE_NAME"
+                    set VALUE "$ACTIVE_NAME"
                 end
                 printf "$FMT" "$VALUE"
             end
