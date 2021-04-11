@@ -199,7 +199,7 @@ function kerl_is_valid_installation
 end
 
 function kerl_assert_valid_installation
-    if test ! kerl_is_valid_installation $argv[1]
+    if test ! (kerl_is_valid_installation $argv[1])
         echo "$argv[1] is not a kerl-managed Erlang/OTP installation"
         return 1
     end
